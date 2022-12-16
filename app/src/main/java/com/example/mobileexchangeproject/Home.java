@@ -55,6 +55,14 @@ public class Home extends AppCompatActivity {
         botNav();
     }
 
+    @Override
+    protected void onStop() {
+        //1- save favorite items
+
+        //2- logout user
+        super.onStop();
+    }
+
     // ***********Recycler View********
     public void recyclerViewSetup(){
         recyclerView = findViewById(R.id.recyclerView);
