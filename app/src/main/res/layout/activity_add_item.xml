@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:id="@+id/drawer_layout"
-    android:background="@color/white">
+    tools:context=".AddItem"
+    android:background="@color/white"
+    android:id="@+id/dashboard_drawer">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
+            android:text="Add Item"
             android:textSize="50dp"
             android:textStyle="bold"
             android:layout_centerInParent="true"
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bottom_navigator"
-            app:itemBackground="@color/purple_500"
+            app:itemBackground="@color/themeColor1"
             app:itemTextColor="@drawable/selector"
             app:itemIconTint="@drawable/selector"
             app:menu="@menu/menu"
@@ -33,12 +33,12 @@
             />
     </RelativeLayout>
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:headerLayout="@layout/header"
-        app:menu="@menu/menu"
-        android:id="@+id/nav_view"
-        android:layout_gravity="start"/>
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:headerLayout="@layout/header"-->
+<!--        app:menu="@menu/menu"-->
+<!--        android:id="@+id/nav_view"-->
+<!--        android:layout_gravity="start"/>-->
 
 </androidx.drawerlayout.widget.DrawerLayout>

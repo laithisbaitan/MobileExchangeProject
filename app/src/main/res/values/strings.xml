@@ -3,4 +3,20 @@
     <string name="open">Open Nav Drawer</string>
     <string name="close">close Nav Drawer</string>
 
+    <string-array name="items_in_recycler">
+        <item>Backpack</item>
+        <item>Cup</item>
+        <item>Chair</item>
+        <item>Laptop</item>
+
+    </string-array>
+
+    <string-array name="descriptiom">
+        <item>Some info about item</item>
+        <item>Some info about item</item>
+        <item>Some info about item</item>
+        <item>Some info about item</item>
+
+    </string-array>
+
 </resources>
