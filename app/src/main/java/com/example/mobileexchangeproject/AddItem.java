@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -19,7 +20,14 @@ public class AddItem extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_item);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        actionBarSettings();
+        botNav();
+    }
+
+    private void actionBarSettings() {
         ActionBar actionBar = getSupportActionBar();
 
         // providing title for the ActionBar
@@ -31,8 +39,6 @@ public class AddItem extends AppCompatActivity {
         // methods to display the icon in the ActionBar
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
-
-        botNav();
     }
 
     // *************Bot Nav**************

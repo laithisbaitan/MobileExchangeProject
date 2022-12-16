@@ -6,26 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".Favorite"
     android:background="@color/white"
-    android:id="@+id/about_drawer">
+    android:id="@+id/favorite_drawer">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Favorite"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            android:layout_centerInParent="true"
-            android:textColor="@color/black"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5D539A">
+
+                <ImageView
+                    android:id="@+id/myImage"
+                    android:layout_width="110dp"
+                    android:layout_height="99dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/laptop" />
+
+                <TextView
+                    android:id="@+id/myText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Laptop"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/myImage"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/myText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="light and easy to use"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/myText1"
+                    app:layout_constraintTop_toBottomOf="@+id/myText1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/myImage" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="62dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/fave"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bottom_navigator"
-            app:itemBackground="@color/themeColor1"
+            app:itemBackground="@color/teal_700"
             app:itemTextColor="@drawable/selector"
             app:itemIconTint="@drawable/selector"
             app:menu="@menu/menu"
@@ -33,11 +88,11 @@
             />
     </RelativeLayout>
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:headerLayout="@layout/header"-->
-<!--        app:menu="@menu/menu"-->
-<!--        android:id="@+id/nav_view"-->
-<!--        android:layout_gravity="start"/>-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/side_menu"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"/>
 </androidx.drawerlayout.widget.DrawerLayout>

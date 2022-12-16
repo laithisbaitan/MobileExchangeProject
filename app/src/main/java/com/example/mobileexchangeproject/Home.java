@@ -10,8 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -44,6 +46,8 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         recyclerViewSetup();
         actionBarSettings();
@@ -72,6 +76,10 @@ public class Home extends AppCompatActivity {
         // adding icon in the ActionBar
         actionBar.setIcon(R.drawable.ic_logo);
 
+        getSupportActionBar().setBackgroundDrawable(
+                                new ColorDrawable(getResources()
+                                .getColor(R.color.teal_700)));
+
         // methods to display the icon in the ActionBar
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
@@ -91,20 +99,44 @@ public class Home extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.add_item:{
-                        Toast.makeText(Home.this,"add item page",Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(),AddItem.class));
-                        overridePendingTransition(0,0);
-                        break;
+                    case R.id.profile:{
+                        Toast.makeText(Home.this,"Profile page",Toast.LENGTH_SHORT).show();
+//                        startActivity(new Intent(getApplicationContext(),AddItem.class));
+//                        overridePendingTransition(0,0);
+                        return true;
                     }
                     case R.id.home:{
                         Toast.makeText(Home.this,"you are already here",Toast.LENGTH_SHORT).show();
+                        return true;
+                    }
+                    case R.id.myItems: {
+                        Toast.makeText(Home.this, "My Items page", Toast.LENGTH_SHORT).show();
+//                        startActivity(new Intent(getApplicationContext(),Favorite.class));
+//                        overridePendingTransition(0,0);
+                        return true;
+                    }
+                    case R.id.notification: {
+                        Toast.makeText(Home.this, "Notification page", Toast.LENGTH_SHORT).show();
+//                        startActivity(new Intent(getApplicationContext(),Favorite.class));
+//                        overridePendingTransition(0,0);
                         return true;
                     }
                     case R.id.favorite: {
                         Toast.makeText(Home.this, "favorite page", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getApplicationContext(),Favorite.class));
                         overridePendingTransition(0,0);
+                        return true;
+                    }
+                    case R.id.add_item: {
+                        Toast.makeText(Home.this, "Add Item page", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(),AddItem.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    }
+                    case R.id.settings: {
+                        Toast.makeText(Home.this, "Settings page", Toast.LENGTH_SHORT).show();
+//                        startActivity(new Intent(getApplicationContext(),Favorite.class));
+//                        overridePendingTransition(0,0);
                         return true;
                     }
                 }
