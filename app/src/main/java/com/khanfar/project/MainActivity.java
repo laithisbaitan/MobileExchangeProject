@@ -1,5 +1,6 @@
 package com.khanfar.project;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -14,12 +15,15 @@ public class MainActivity extends AppCompatActivity {
 private TextView MainName ;
 private EditText name , username , email , address , phone ;
 private Button changePassword , editInfo ;
+private AlertDialog.Builder builder ;
+private  AlertDialog alertDialog ;
+private EditText oldPassword , newPassword , confirmPassword ;
+private  Button cancel , savePassword ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN , WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         setUpComponent () ;
         editInfo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +42,31 @@ private Button changePassword , editInfo ;
 
             }
         });
+
+        changePassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                createPasswordForm() ;
+
+            }
+        });
+    }
+
+    private void createPasswordForm() {
+        builder = new AlertDialog.Builder(this) ;
+        final View passwordPopUp = getLayoutInflater().inflate(R.layout.popup , null) ;
+        oldPassword = passwordPopUp.findViewById(R.id.oldPassword) ;
+        newPassword  = passwordPopUp.findViewById(R.id.newPassword) ;
+        confirmPassword = passwordPopUp.findViewById(R.id.confirmPassword) ;
+       // cancel = passwordPopUp.findViewById(R.id.cancel) ;
+        savePassword = passwordPopUp.findViewById(R.id.savePassword) ;
+        builder.setView(passwordPopUp);
+         alertDialog = builder.create() ;
+         alertDialog.show();
+
+
+
+
     }
 
     private void setUpComponent() {

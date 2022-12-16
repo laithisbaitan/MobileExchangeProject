@@ -4,11 +4,13 @@
     <style name="editTextForMyProfile">
         <item name="android:gravity">center</item>
         <item name="android:textSize">20dp</item>
-        <item name="backgroundColor">#E3D5DC</item>
+        <item name="backgroundColor">#D6E4E5</item>
     </style>
+
     <style name="TextViewForMyProfile">
         <item name="android:gravity">center</item>
         <item name="android:textSize">20dp</item>
-        <item name="backgroundColor">#E3D5DC</item>
+        <item name="backgroundColor">#497174</item>
     </style>
+
 </resources>
