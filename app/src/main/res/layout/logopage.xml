@@ -17,6 +17,7 @@
 
         <ImageView
             android:id="@+id/logo1"
+
             android:layout_marginTop="160dp"
             android:layout_marginRight="4dp"
             android:layout_gravity="center"
