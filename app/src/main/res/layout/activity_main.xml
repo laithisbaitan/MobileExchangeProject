@@ -31,6 +31,7 @@
             android:layout_width="246dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
+android:fontFamily="@font/changa"
             android:text="Tareq khanfar"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -38,8 +39,7 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView6"
             app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="@+id/imageView6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
         <LinearLayout
             android:layout_width="409dp"
