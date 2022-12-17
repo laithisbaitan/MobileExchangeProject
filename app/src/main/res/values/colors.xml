@@ -12,4 +12,5 @@
     <color name="background">#EFF5F5</color>
     <color name="textColor">#497174</color>
     <color name="clickable">#EB6440</color>
+    <color name="itemBackground">#D6E4E5</color>
 </resources>
