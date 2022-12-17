@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Home"
     android:id="@+id/home_drawer"
-    android:background="@color/white">
+    android:background="@color/background">
 
     <RelativeLayout
         android:layout_width="match_parent"

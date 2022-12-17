@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="themeColor1">#483d8b</color>
     <color name="themeColor2">#b22222</color>
+    <color name="background">#EFF5F5</color>
+    <color name="textColor">#497174</color>
+    <color name="clickable">#EB6440</color>
 </resources>

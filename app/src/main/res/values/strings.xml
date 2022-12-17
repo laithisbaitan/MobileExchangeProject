@@ -12,10 +12,11 @@
     </string-array>
 
     <string-array name="descriptiom">
-        <item>Some info about item</item>
-        <item>Some info about item</item>
-        <item>Some info about item</item>
-        <item>Some info about item</item>
+        <item>Name: Tareq \n
+              Date: Dec 17</item>
+        <item>Name: Laith\n Date: Jan 9</item>
+        <item>Name: Ibrahim\n Date: Nov 23</item>
+        <item>Name: Roa\n Date: Oct 14</item>
 
     </string-array>
 
