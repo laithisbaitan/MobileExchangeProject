@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="400dp"
+    android:layout_height="310dp"
+    android:layout_margin="10dp"
+    android:padding="9dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <ImageView
+            android:id="@+id/imageNotif"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/gredient_color" />
+
+        <TextView
+            android:id="@+id/nameOfProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nameOfProduct"
+
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/nameOfCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name Of Customer"
+            android:textAlignment="center"
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:textAlignment="center"
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time :"
+
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
