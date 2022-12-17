@@ -58,7 +58,7 @@ private  Button cancel , savePassword ;
 
     private void createPasswordForm() {
         builder = new AlertDialog.Builder(this) ;
-        final View passwordPopUp = getLayoutInflater().inflate(R.layout.popup , null) ;
+        final View passwordPopUp = getLayoutInflater().inflate(R.layout.popup_create_password, null) ;
         oldPassword = passwordPopUp.findViewById(R.id.oldPassword) ;
         newPassword  = passwordPopUp.findViewById(R.id.newPassword) ;
         confirmPassword = passwordPopUp.findViewById(R.id.confirmPassword) ;

@@ -49,7 +49,7 @@ private ImageView image ;
 
     private void createPopUpForCustomerInfo() {
         builder = new AlertDialog.Builder(this) ;
-        final View InfoPopUp = getLayoutInflater().inflate(R.layout.info_customer , null) ;
+        final View InfoPopUp = getLayoutInflater().inflate(R.layout.popup_info_customer, null) ;
         name = InfoPopUp.findViewById(R.id.EditName_info) ;
         username = InfoPopUp.findViewById(R.id.EditUserName_info) ;
         email = InfoPopUp.findViewById(R.id.EditEmail_info) ;
