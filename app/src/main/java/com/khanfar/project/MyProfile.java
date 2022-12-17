@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MyProfile extends AppCompatActivity {
 private TextView MainName ;
 private EditText name , username , email , address , phone ;
 private ImageView imageView ;
@@ -24,7 +24,9 @@ private  Button cancel , savePassword ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.my_profile);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("My Profile");
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN , WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setUpComponent () ;
         editInfo.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +41,7 @@ private  Button cancel , savePassword ;
                     editInfo.setText("Save Info");
                 }
                 else {
-                    Toast.makeText(MainActivity.this, "Data is Saved Successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MyProfile.this, "Data is Saved Successfully", Toast.LENGTH_SHORT).show();
                 }
 
             }

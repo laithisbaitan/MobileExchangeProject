@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -31,16 +30,18 @@ private ImageView image ;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notifaction);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("My Nofitications");
         recyclerView = findViewById(R.id.recycleView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
-        LinkedList<Item>list = new LinkedList<>() ;
-        list.add(new Item(R.drawable.pizza , new Date().toString() , new Date().toString() , "PIZZA " , "Tareq khanfar1"));
-        list.add(new Item(R.drawable.pizza , new Date().toString() , new Date().toString() , "UnKnown " , "Tareq khanfar2"));
-        list.add(new Item(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer2 " , "Tareq khanfar3"));
-        list.add(new Item(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer3 " , "Tareq khanfar4"));
-        list.add(new Item(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer4 " , "Tareq khanfar5"));
-        list.add(new Item(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer5 " , "Tareq khanfar6"));
+        LinkedList<NotificationItem>list = new LinkedList<>() ;
+        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "PIZZA " , "Tareq khanfar1"));
+        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "UnKnown " , "Tareq khanfar2"));
+        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer2 " , "Tareq khanfar3"));
+        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer3 " , "Tareq khanfar4"));
+        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer4 " , "Tareq khanfar5"));
+        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer5 " , "Tareq khanfar6"));
 
         MyAdapter adapter = new MyAdapter( list , this) ;
         recyclerView.setAdapter(adapter);
@@ -69,10 +70,10 @@ private ImageView image ;
     }
 
     private class MyAdapter extends RecyclerView.Adapter<MyAdapter.Holder> {
-        LinkedList<Item>list = new LinkedList<>() ;
+        LinkedList<NotificationItem>list = new LinkedList<>() ;
         Context context ;
 
-        public MyAdapter(LinkedList<Item> list, Context context) {
+        public MyAdapter(LinkedList<NotificationItem> list, Context context) {
             this.list = list;
             this.context = context;
         }

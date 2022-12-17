@@ -1,14 +1,12 @@
 package com.khanfar.project;
 
-import java.util.Date;
-
-public class Item {
+public class NotificationItem {
     private int image ;
     private String Date , time ;
     private String nameOfProduct ;
     private String nameOfCustomer ;
 
-    public Item(int image, String date , String time, String nameOfProduct, String nameOfCustomer) {
+    public NotificationItem(int image, String date , String time, String nameOfProduct, String nameOfCustomer) {
         this.image = image;
         Date = date;
         this.time = time ;
