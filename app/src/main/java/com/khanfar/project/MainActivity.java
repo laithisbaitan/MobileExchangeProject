@@ -8,12 +8,14 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 private TextView MainName ;
 private EditText name , username , email , address , phone ;
+private ImageView imageView ;
 private Button changePassword , editInfo ;
 private AlertDialog.Builder builder ;
 private  AlertDialog alertDialog ;
@@ -78,6 +80,14 @@ private  Button cancel , savePassword ;
         phone = findViewById(R.id.EditPhone) ;
         changePassword = findViewById(R.id.changePassword) ;
         editInfo = findViewById(R.id.editInfo) ;
+        imageView = findViewById(R.id.profileImage);
+
+        name.setText("Tareq khanfar");
+        username.setText("tareq_99912");
+        phone.setText("0595870228");
+        email.setText("tareqkhanfar29@gmail.com");
+        address.setText("Ramallah - Birzeit");
+        imageView.setImageResource(R.drawable.image3);
 
         name.setEnabled(false);
         username.setEnabled(false);

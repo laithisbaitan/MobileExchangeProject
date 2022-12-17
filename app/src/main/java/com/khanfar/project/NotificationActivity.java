@@ -46,7 +46,7 @@ private ImageView image ;
         recyclerView.setAdapter(adapter);
     }
 
-    private void createPopUpForCustomerInfo(Item item) {
+    private void createPopUpForCustomerInfo() {
         builder = new AlertDialog.Builder(this) ;
         final View InfoPopUp = getLayoutInflater().inflate(R.layout.info_customer , null) ;
         name = InfoPopUp.findViewById(R.id.EditName_info) ;
@@ -59,10 +59,13 @@ private ImageView image ;
         builder.setView(InfoPopUp);
         alertDialog = builder.create() ;
         alertDialog.show();
-        name.setText("khanfar");
+        name.setText("Tareq khanfar");
         username.setText("tareq_99912");
         phone.setText("0595870228");
-        image.setImageResource(item.getImage());
+        image.setImageResource(R.drawable.image3);
+        email.setText("tareqkhanfar29@gmail.com");
+        address.setText("Ramallah - Birzeit");
+
     }
 
     private class MyAdapter extends RecyclerView.Adapter<MyAdapter.Holder> {
@@ -114,7 +117,7 @@ private ImageView image ;
          @Override
          public void onClick(View v) {
 
-             createPopUpForCustomerInfo(new Item(R.drawable.image3 , new Date().toString() , new Date().toString() , "table" , "123 khanfar1"));
+             createPopUpForCustomerInfo();
          }
      });
 
