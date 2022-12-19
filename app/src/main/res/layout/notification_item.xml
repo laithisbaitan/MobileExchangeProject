@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card"
-    android:layout_width="400dp"
+    android:layout_width="350dp"
     android:layout_height="310dp"
     android:layout_margin="10dp"
     android:padding="9dp"
@@ -28,7 +28,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="nameOfProduct"
-
             android:textAlignment="center"
             android:textSize="20dp" />
 

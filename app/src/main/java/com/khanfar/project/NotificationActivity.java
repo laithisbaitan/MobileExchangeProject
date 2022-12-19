@@ -36,7 +36,7 @@ private ImageView image ;
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         LinkedList<NotificationItem>list = new LinkedList<>() ;
-        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "PIZZA " , "Tareq khanfar1"));
+        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "o " , "Tareq khanfar1"));
         list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "UnKnown " , "Tareq khanfar2"));
         list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer2 " , "Tareq khanfar3"));
         list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer3 " , "Tareq khanfar4"));

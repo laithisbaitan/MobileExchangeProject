@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent">
+
     <ImageView
         android:id="@+id/image_info"
         android:layout_gravity="center"
@@ -12,134 +13,162 @@
         android:src="@drawable/image3"
       />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="73dp"
-        android:orientation="horizontal">
 
-        <TextView
-            style="@style/TextViewForMyProfile"
-            android:layout_width="137dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="20dp"
-            android:background="#497174"
-            android:text="Name"
-            android:textColor="@color/white" />
 
-        <EditText
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:orientation="horizontal">
 
-            android:id="@+id/EditName_info"
+            <TextView
+                style="@style/TextViewForMyProfile"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/purple_500"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+            <EditText
+
+                android:id="@+id/EditName_info"
+                style="@style/editTextForMyProfile"
+                android:layout_marginTop="20dp"
+                android:layout_height="40dp"
+                android:layout_width="300dp"
+
+                android:background="#D6E4E5"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewForMyProfile"
+                android:layout_width="140dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:textColor="@color/white"
+                android:text="userName" />
+
+            <EditText
+
+                style="@style/editTextForMyProfile"
+                android:layout_marginTop="20dp"
+                android:layout_height="40dp"
+                android:layout_width="300dp"
+                android:background="#D6E4E5"
+
+                android:id="@+id/EditUserName_info"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewForMyProfile"
+                android:layout_width="140dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+
+                android:background="@color/purple_500"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="Email" />
+
+            <EditText
+
+                style="@style/editTextForMyProfile"
+                android:background="#D6E4E5"
+
+                android:layout_marginTop="20dp"
+                android:layout_height="40dp"
+                android:layout_width="300dp"
+                android:id="@+id/EditEmail_info"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewForMyProfile"
+                android:layout_width="140dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+
+                android:background="@color/purple_500"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="Address" />
+
+            <EditText
+
+                style="@style/editTextForMyProfile"
+                android:layout_marginTop="20dp"
+                android:layout_height="40dp"
+                android:layout_width="300dp"
+                android:background="#D6E4E5"
+
+                android:id="@+id/EditAddress_info"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewForMyProfile"
+                android:background="@color/purple_500"
+                android:textColor="@color/white"
+                android:layout_width="140dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_weight="1"
+                android:text="Phone" />
+
+            <EditText
+
+                style="@style/editTextForMyProfile"
+                android:layout_marginTop="20dp"
+                android:layout_height="40dp"
+                android:layout_width="300dp"
+                android:background="#D6E4E5"
+
+                android:id="@+id/EditPhone_info"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/editInfo"
             style="@style/editTextForMyProfile"
-            android:layout_width="300dp"
-            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
             android:layout_height="40dp"
-            android:background="#D6E4E5"
-
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            style="@style/TextViewForMyProfile"
-            android:layout_width="168dp"
-            android:layout_height="54dp"
-            android:layout_weight="1"
-            android:background="#497174"
+            android:background="@color/purple_500"
             android:textColor="@color/white"
-            android:text="userName" />
+            android:layout_margin="40dp"
+            android:text="Save" />
 
-        <EditText
-
-            style="@style/editTextForMyProfile"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:background="#D6E4E5"
-
-            android:id="@+id/EditUserName_info"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            style="@style/TextViewForMyProfile"
-            android:layout_width="168dp"
-            android:layout_height="54dp"
-            android:background="#497174"
-            android:textColor="@color/white"
-            android:layout_weight="1"
-            android:text="Email" />
-
-        <EditText
-
-            style="@style/editTextForMyProfile"
-            android:layout_width="300dp"
-            android:background="#D6E4E5"
-
-            android:layout_height="40dp"
-            android:id="@+id/EditEmail_info"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            style="@style/TextViewForMyProfile"
-            android:layout_width="168dp"
-            android:layout_height="54dp"
-            android:background="#497174"
-            android:textColor="@color/white"
-            android:layout_weight="1"
-            android:text="Address" />
-
-        <EditText
-
-            style="@style/editTextForMyProfile"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:background="#D6E4E5"
-
-            android:id="@+id/EditAddress_info"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            style="@style/TextViewForMyProfile"
-            android:layout_width="168dp"
-            android:background="#497174"
-            android:textColor="@color/white"
-            android:layout_height="54dp"
-            android:layout_weight="1"
-            android:text="Phone" />
-
-        <EditText
-
-            style="@style/editTextForMyProfile"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:background="#D6E4E5"
-
-            android:id="@+id/EditPhone_info"
-            android:layout_weight="1" />
-
-    </LinearLayout>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
