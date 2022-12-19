@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-private Button goToSignIn ;
+    private Button goToSignIn ;
+    private Button loginBtn ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +21,8 @@ private Button goToSignIn ;
         goToSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this , sign_In_Activity.class ) ;
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(),sign_In_Activity.class));
+                overridePendingTransition(0,0);
             }
         });
     }
@@ -28,5 +30,14 @@ private Button goToSignIn ;
     private void setUpComponent() {
         goToSignIn = findViewById(R.id.btnsignin);
 
+        loginBtn = findViewById(R.id.btnlogin);
+
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this , Home.class ) ;
+                startActivity(intent);
+            }
+        });
     }
 }
