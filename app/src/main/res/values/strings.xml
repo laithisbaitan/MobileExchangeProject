@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MobileExchangeProject</string>
+    <string-array name="tf">
+        <item>Delivery Ability</item>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
 </resources>
