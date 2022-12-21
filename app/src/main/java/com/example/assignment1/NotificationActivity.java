@@ -63,7 +63,7 @@ private ImageView image ;
         name.setText("Tareq khanfar");
         username.setText("tareq_99912");
         phone.setText("0595870228");
-        image.setImageResource(R.drawable.image3);
+        image.setImageResource(R.drawable.profile_pic);
         email.setText("tareqkhanfar29@gmail.com");
         address.setText("Ramallah - Birzeit");
 

@@ -20,4 +20,10 @@
         <item>Name: Roa\n Date: Oct 14</item>
 
     </string-array>
+
+    <string-array name="tf">
+        <item>Delivery Ability</item>
+        <item>True</item>
+        <item>False</item>
+    </string-array>
 </resources>

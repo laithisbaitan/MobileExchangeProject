@@ -86,7 +86,7 @@ private  Button cancel , savePassword ;
         phone.setText("0595870228");
         email.setText("tareqkhanfar29@gmail.com");
         address.setText("Ramallah - Birzeit");
-        imageView.setImageResource(R.drawable.image3);
+        imageView.setImageResource(R.drawable.profile_pic);
 
         name.setEnabled(false);
         username.setEnabled(false);

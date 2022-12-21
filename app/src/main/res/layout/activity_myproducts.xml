@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myproducts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="380dp"
+                android:layout_height="159dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_backgound"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/delete_product"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/edittext_backgound"
+                    android:backgroundTint="#EB6440"
+                    android:ems="10"
+                    android:fontFamily="@font/changa"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:textColor="#CDFFFFFF"
+                    android:textColorHint="#CDFFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.875"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rippleColor="#000000" />
+
+                <Button
+                    android:id="@+id/edit_product"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/edittext_backgound"
+                    android:backgroundTint="#497174"
+                    android:ems="10"
+                    android:fontFamily="@font/changa"
+                    android:gravity="center"
+                    android:text="Edit"
+                    android:textColor="#CDFFFFFF"
+                    android:textColorHint="#CDFFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.875"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rippleColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/img_myproduct"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/testimg" />
+
+                <TextView
+                    android:id="@+id/myproduct_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="wallpaper"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+                />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/w2"
+                android:layout_width="380dp"
+                android:layout_height="159dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_backgound"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/delete1_product"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/edittext_backgound"
+                    android:backgroundTint="#EB6440"
+                    android:ems="10"
+                    android:fontFamily="@font/changa"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:textColor="#CDFFFFFF"
+                    android:textColorHint="#CDFFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.875"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rippleColor="#000000" />
+
+                <Button
+                    android:id="@+id/edit1_product"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/edittext_backgound"
+                    android:backgroundTint="#497174"
+                    android:ems="10"
+                    android:fontFamily="@font/changa"
+                    android:gravity="center"
+                    android:text="Edit"
+                    android:textColor="#CDFFFFFF"
+                    android:textColorHint="#CDFFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.875"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rippleColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/img1_myproduct"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/testimg" />
+
+                <TextView
+                    android:id="@+id/myproduct1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Sofa"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+                />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

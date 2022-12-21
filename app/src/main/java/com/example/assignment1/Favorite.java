@@ -81,8 +81,8 @@ public class Favorite extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.profile:{
                         Toast.makeText(Favorite.this,"Profile page",Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(),AddItem.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(),MyProfile.class));
+                        overridePendingTransition(0,0);
                         return true;
                     }
                     case R.id.home:{
@@ -93,14 +93,14 @@ public class Favorite extends AppCompatActivity {
                     }
                     case R.id.myItems: {
                         Toast.makeText(Favorite.this, "My Items page", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(),Favorite.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(),myproducts.class));
+                        overridePendingTransition(0,0);
                         return true;
                     }
                     case R.id.notification: {
                         Toast.makeText(Favorite.this, "Notification page", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(),Favorite.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(),NotificationActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
                     }
                     case R.id.favorite: {
@@ -111,8 +111,8 @@ public class Favorite extends AppCompatActivity {
                     }
                     case R.id.add_item: {
                         Toast.makeText(Favorite.this, "Add Item page", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(),AddItem.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(),addproduct.class));
+                        overridePendingTransition(0,0);
                         return true;
                     }
                     case R.id.settings: {
@@ -138,8 +138,8 @@ public class Favorite extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.add_item:
                         Toast.makeText(Favorite.this, "add item page", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(), AddItem.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), addproduct.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.home:
                         Toast.makeText(Favorite.this, "home page", Toast.LENGTH_SHORT).show();

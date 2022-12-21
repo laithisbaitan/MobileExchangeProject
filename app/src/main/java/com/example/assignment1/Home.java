@@ -1,10 +1,12 @@
 package com.example.assignment1;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.SearchView;
 import android.widget.Toast;
@@ -84,6 +86,18 @@ public class Home extends AppCompatActivity {
         MyAdapter myAdapter = new MyAdapter(this,s1,s2,images);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+//        recyclerView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(),product_view.class));
+//                overridePendingTransition(0,0);
+//            }
+//        });
+    }
+    public void openViewActivity(Context curr) {
+        startActivity(new Intent(curr,product_view.class));
+        overridePendingTransition(0,0);
     }
 
     // ************Action Bar***********
@@ -121,8 +135,8 @@ public class Home extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.profile:{
                         Toast.makeText(Home.this,"Profile page",Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(),AddItem.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(),MyProfile.class));
+                        overridePendingTransition(0,0);
                         return true;
                     }
                     case R.id.home:{
@@ -131,14 +145,14 @@ public class Home extends AppCompatActivity {
                     }
                     case R.id.myItems: {
                         Toast.makeText(Home.this, "My Items page", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(),Favorite.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(),myproducts.class));
+                        overridePendingTransition(0,0);
                         return true;
                     }
                     case R.id.notification: {
                         Toast.makeText(Home.this, "Notification page", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(),Favorite.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(),NotificationActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
                     }
                     case R.id.favorite: {
@@ -149,8 +163,8 @@ public class Home extends AppCompatActivity {
                     }
                     case R.id.add_item: {
                         Toast.makeText(Home.this, "Add Item page", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(),AddItem.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(),addproduct.class));
+                        overridePendingTransition(0,0);
                         return true;
                     }
                     case R.id.settings: {
@@ -176,8 +190,8 @@ public class Home extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.add_item:
                         Toast.makeText(Home.this, "add item page", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(getApplicationContext(),AddItem.class));
-//                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(),addproduct.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.home:
                         return true;

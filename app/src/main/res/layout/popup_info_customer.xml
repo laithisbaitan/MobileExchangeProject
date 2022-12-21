@@ -10,7 +10,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="80dp"
-        android:src="@drawable/image3"
+        android:src="@drawable/profile_pic"
       />
 
 

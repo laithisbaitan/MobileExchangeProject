@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF5F5"
+    app:circularflow_radiusInDP="15dp"
+    tools:context=".product_view">
+
+    <TextView
+        android:id="@+id/productplace"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_backgound"
+        android:backgroundTint="#D6E4E5"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:shadowColor="#000000"
+        android:text="In Ramallah"
+        android:textColor="#497174"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/productdelivary"
+        app:layout_constraintEnd_toEndOf="@+id/productdelivary"
+        app:layout_constraintStart_toStartOf="@+id/productdelivary"
+        app:layout_constraintTop_toBottomOf="@+id/productdate"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/productdelivary"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_backgound"
+        android:backgroundTint="#D6E4E5"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:shadowColor="#000000"
+        android:text="Delivary Is Available"
+        android:textColor="#497174"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/productdescription"
+        app:layout_constraintEnd_toEndOf="@+id/productdescription"
+        app:layout_constraintStart_toStartOf="@+id/productdescription"
+        app:layout_constraintTop_toBottomOf="@+id/productplace"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/productdescription"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/edittext_backgound"
+        android:backgroundTint="#D6E4E5"
+        android:fontFamily="@font/roboto"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="7dp"
+        android:shadowColor="#000000"
+        android:text="a new yellow sofa with 2 meters width and 0.5 hight clean and new"
+        android:textColor="#497174"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productdelivary"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="40dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/productname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/testimg2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/productname"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="393dp"
+        android:background="@drawable/edittext_backgound"
+        android:backgroundTint="#D6E4E5"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:shadowColor="#000000"
+        android:text="Yellow Sofa"
+        android:textColor="#497174"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/productdate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/productdate"
+        app:layout_constraintTop_toBottomOf="@+id/addproduct"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/productdate"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_backgound"
+        android:backgroundTint="#D6E4E5"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:shadowColor="#000000"
+        android:text="12/1/2022"
+        android:textColor="#497174"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/productplace"
+        app:layout_constraintEnd_toEndOf="@+id/productplace"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/productplace"
+        app:layout_constraintTop_toBottomOf="@+id/productname"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/addproduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/circle_button"
+        android:backgroundTint="#EB6440"
+        android:fontFamily="@font/changa"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/productname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
