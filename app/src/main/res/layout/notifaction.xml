@@ -5,7 +5,15 @@
     android:background="@color/purple_500"
     android:orientation="vertical"
     android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
 
+    android:textSize="20dp"
+    android:textColor="#7BE67F"
+    android:textAlignment="center"
+    android:text="Note : Click on item to open member profile"
+    />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleView"
         android:layout_width="match_parent"

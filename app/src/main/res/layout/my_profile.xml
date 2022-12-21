@@ -198,9 +198,9 @@ android:id="@+id/EditEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#D6E4E5"
-                    android:textColor="@color/purple_500"
                     android:textSize="20dp"
                     android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Change My Password" />
 
@@ -212,7 +212,8 @@ android:id="@+id/EditEmail"
                     android:layout_height="40dp"
                  android:background="#b22222"
                     android:textColor="@color/white"
-                    android:layout_margin="40dp"
+                    android:layout_marginTop="10dp"
+
                     android:text="Edit Info" />
 
         </LinearLayout>

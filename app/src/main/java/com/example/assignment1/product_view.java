@@ -9,6 +9,10 @@ public class product_view extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Product View");
         setContentView(R.layout.activity_product_view);
     }
+
+
 }

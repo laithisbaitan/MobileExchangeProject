@@ -36,12 +36,12 @@ private ImageView image ;
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         LinkedList<NotificationItem>list = new LinkedList<>() ;
-        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "o " , "Tareq khanfar1"));
-        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "UnKnown " , "Tareq khanfar2"));
-        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer2 " , "Tareq khanfar3"));
-        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer3 " , "Tareq khanfar4"));
-        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer4 " , "Tareq khanfar5"));
-        list.add(new NotificationItem(R.drawable.pizza , new Date().toString() , new Date().toString() , "Computer5 " , "Tareq khanfar6"));
+        list.add(new NotificationItem(R.drawable.pizza , "21/12/2022" ,"9:48PM" , "Pizza " , "Tareq khanfar1"));
+        list.add(new NotificationItem(R.drawable.cup , "21/12/2022" ,"9:48PM" , "UnKnown " , "Tareq khanfar2"));
+        list.add(new NotificationItem(R.drawable.chair ,"21/12/2022" ,"9:48PM" , "Computer2 " , "Tareq khanfar3"));
+        list.add(new NotificationItem(R.drawable.pizza , "21/12/2022" ,"9:48PM" , "Computer3 " , "Tareq khanfar4"));
+        list.add(new NotificationItem(R.drawable.pizza , "21/12/2022" ,"9:48PM" , "Computer4 " , "Tareq khanfar5"));
+        list.add(new NotificationItem(R.drawable.pizza , "21/12/2022" ,"9:48PM" , "Computer5 " , "Tareq khanfar6"));
 
         MyAdapter adapter = new MyAdapter( list , this) ;
         recyclerView.setAdapter(adapter);
