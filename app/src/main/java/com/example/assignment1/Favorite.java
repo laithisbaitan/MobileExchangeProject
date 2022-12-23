@@ -59,7 +59,8 @@ public class Favorite extends AppCompatActivity {
 
         getSupportActionBar().setBackgroundDrawable(
                 new ColorDrawable(getResources()
-                        .getColor(R.color.teal_700)));
+                        .getColor(R.color.purple_500)));
+
         // methods to display the icon in the ActionBar
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);

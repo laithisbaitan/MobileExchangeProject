@@ -1,5 +1,6 @@
 package com.example.assignment1;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -27,6 +28,9 @@ private  Button cancel , savePassword ;
         setContentView(R.layout.my_profile);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("My Profile");
+        getSupportActionBar().setBackgroundDrawable(
+                new ColorDrawable(getResources()
+                        .getColor(R.color.purple_500)));
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN , WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setUpComponent () ;
         editInfo.setOnClickListener(new View.OnClickListener() {

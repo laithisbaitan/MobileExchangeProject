@@ -1,5 +1,6 @@
 package com.example.assignment1;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -21,6 +22,10 @@ public class addproduct extends AppCompatActivity implements AdapterView.OnItemS
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
+        getSupportActionBar().setBackgroundDrawable(
+                new ColorDrawable(getResources()
+                        .getColor(R.color.purple_500)));
     }
 
     @Override

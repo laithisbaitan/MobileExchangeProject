@@ -1,6 +1,7 @@
 package com.example.assignment1;
 
 import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +33,9 @@ private ImageView image ;
         setContentView(R.layout.notifaction);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("My Nofitications");
+        getSupportActionBar().setBackgroundDrawable(
+                new ColorDrawable(getResources()
+                        .getColor(R.color.purple_500)));
         recyclerView = findViewById(R.id.recycleView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);

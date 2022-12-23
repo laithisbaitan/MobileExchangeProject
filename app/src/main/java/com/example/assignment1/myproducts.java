@@ -1,5 +1,6 @@
 package com.example.assignment1;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,5 +13,9 @@ public class myproducts extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("My Product");
         setContentView(R.layout.activity_myproducts);
+
+        getSupportActionBar().setBackgroundDrawable(
+                new ColorDrawable(getResources()
+                        .getColor(R.color.purple_500)));
     }
 }
